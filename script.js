@@ -4,3 +4,11 @@ const playAgainBtn = document.getElementById('play-again');
 const popup = document.getElementById('popup-container');
 const notification = document.getElementById('notification-container');
 const finalMessage = document.getElementById('final-message');
+
+const figureParts = document.querySelectorAll('.figure-part');
+
+const words = ['application', 'react', 'programming', 'interface', 'arsenal'];
+
+let selectedWord = words[Math.floor(Math.random() * words.length)];
+
+console.log(selectedWord);
