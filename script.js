@@ -11,4 +11,13 @@ const words = ['application', 'react', 'programming', 'interface', 'arsenal'];
 
 let selectedWord = words[Math.floor(Math.random() * words.length)];
 
-console.log(selectedWord);
+const correctLetters = [];
+const wrongLetters = [];
+
+
+//Show hidden word
+function displayWord() {
+    wordEl.innerHTML = `${selectedWord.split('').map(letter => `<span class="letter">${correctLetters.includes(letter) ? letter : ''}</span>`).join('')}`;
+}
+
+displayWord();
