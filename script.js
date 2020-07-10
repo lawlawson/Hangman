@@ -11,7 +11,7 @@ const words = ["application", "react", "programming", "interface", "arsenal"];
 
 let selectedWord = words[Math.floor(Math.random() * words.length)];
 
-const correctLetters = ['r','e','a','c','t'];
+const correctLetters = [];
 const wrongLetters = [];
 
 //Show hidden word
