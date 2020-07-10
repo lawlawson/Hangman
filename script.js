@@ -36,15 +36,18 @@ function displayWord() {
 
 //Update wrong letters
 function updateWrongLettersEl() {
-  console.log('Update wrong');
+  wrongLettersEl.innerHTML = `
+    ${wrongLetters.length > 0 ? '<p>Wrong</p>' : ''}
+    ${wrongLetters.map(letter => `<span>${letter}</span>`)}
+  `;
 }
 
-//Show notifcation
+//Show notification
 function showNotification() {
   notification.classList.add('show');
 
   setTimeout(() => {
-    notifcation.classList.remove('show');
+    notification.classList.remove('show');
   }, 2000);
 }
 
